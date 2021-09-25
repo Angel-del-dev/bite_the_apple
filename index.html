@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase the apple</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/core.js" type="module" defer></script>
+</head>
+<body>
+    <div class="modal-1">
+        <span><strong>Bite the apple</strong></span>
+        <br />
+        <span><i>Rules:</i></span>
+        <ul>
+            <li>As soon as you press the button, the game will start</li>
+            <li>There's going to be a 10 second timer</li>
+            <li>The game finishes when the timer gets to <strong>10 : 00</strong> or when you touch a spike</li>
+            <li>The goal is to catch as many apples <code>(Red squares)</code> as posible</li>
+        </ul>
+        <button id="start">Start game</button>
+    </div>
+    <div class="modal-2">
+        <span><strong>Game over!</strong></span>
+        <p>You have earned<span id="resultPoints"></span></p>
+        <span id="timePlayed">0s</span>
+        <br />
+        <br />
+        <button onclick="location.reload()">Restart game</button>
+    </div>
+    <div id="counter">
+        Points: 
+        <span id="points">0</span> 
+        <br />
+        Moves: 
+        <span id="moves">0</span> 
+        <br />
+        <span id="timerCount">
+            Time: 
+            <span id="sec">0</span>
+            :
+            <span id="milSec">00</span>
+        </span>
+    </div>
+    <div class="wrap" id="board"></div>
+</body>
+</html>

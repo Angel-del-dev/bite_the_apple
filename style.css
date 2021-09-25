@@ -1,0 +1,92 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(5,150px);
+    grid-template-rows: repeat(5,150px);
+    z-index: 10;
+}
+
+.wrap > div {
+    border: 1px solid #000;
+}
+
+.apple {
+    background-color: #C00;
+}
+
+.player {
+    background-color: #000;
+}
+
+#counter {
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #0a0a0a;
+    width: auto;
+}
+
+.spike {
+    background-color: burlywood;
+}
+
+.modal-1,
+.modal-2 {
+    background-color: burlywood;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-1 {
+    z-index: 999;
+}
+
+.modal-2 {
+    z-index: 998;
+}
+
+.modal-1 ul {
+    text-align: left;
+}
+
+button {
+    background-color: #C00;
+    border-radius: 5px;
+    color: #FAFAFF;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(5,100px);
+        grid-template-rows: repeat(5,100px);
+    } 
+}
+
+@media (max-width: 960px) {
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(5,50px);
+        grid-template-rows: repeat(5,50px);
+    } 
+    .modal-1,
+    .modal-2 {
+        width: 400px;
+        height: 400px;
+    }
+}
