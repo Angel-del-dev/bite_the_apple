@@ -7,3 +7,5 @@ A small vanilla js game
 + There's going to be a 10 second timer
 + The game finishes when the timer gets to `10:00` or when you touch a spike
 + The goal is to catch as many apples (Red squares) as posible
+
+[Play bite the apple here](https://angel-del-dev.github.io/bite_the_apple/)
