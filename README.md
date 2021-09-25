@@ -1,2 +1,2 @@
-# bithe_the_apple
+# bite_the_apple
 A small vanilla js game
